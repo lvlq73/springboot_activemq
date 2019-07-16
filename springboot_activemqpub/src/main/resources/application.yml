@@ -1,0 +1,18 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /activemqPublisher
+spring:
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    close-timeout: 5000
+    in-memory: false
+    user: admin
+    password: admin
+    pool:
+      max-connections: 100
+    send-timeout: 3000
+  jms:
+    pub-sub-domain: true
+    listener:
+          acknowledge-mode: client
