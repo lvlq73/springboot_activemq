@@ -1,0 +1,2 @@
+# springboot_activemq
+springboot_activemq的demo，仅供参考
